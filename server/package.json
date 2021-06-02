@@ -2,9 +2,13 @@
   "name": "server",
   "version": "0.0.1",
   "description": "",
-  "author": "",
   "private": true,
-  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucifer13Freeman/AshenOne.git"
+  },
+  "author": "Lipinskas Dmitry <Dmitri98LD@gmail.com> (Lucifer13Freeman)",
+  "license": "ISC",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -23,10 +27,15 @@
   "dependencies": {
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
+    "@nestjs/mongoose": "^7.2.4",
     "@nestjs/platform-express": "^7.6.15",
+    "@nestjs/serve-static": "^2.1.4",
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.12.12",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.6.6"
+    "rxjs": "^6.6.6",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.6.0",
@@ -34,6 +43,7 @@
     "@nestjs/testing": "^7.6.15",
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.22",
+    "@types/multer": "^1.4.5",
     "@types/node": "^14.14.36",
     "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.19.0",

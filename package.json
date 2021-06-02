@@ -1,0 +1,28 @@
+{
+  "name": "ashen-one-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "npm run start:dev --prefix server",
+    "dev-client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev-client\" \"npm run dev-server\"",
+    "start-server": "npm start --prefix server",
+    "start-client": "npm start --prefix client",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucifer13Freeman/AshenOneMusic.git"
+  },
+  "author": "Lipinskas Dmitry <Dmitri98LD@gmail.com> (Lucifer13Freeman)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucifer13Freeman/AshenOneMusic/issues"
+  },
+  "homepage": "https://github.com/Lucifer13Freeman/AshenOneMusic#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
