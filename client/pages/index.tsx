@@ -1,14 +1,16 @@
-import { Button } from "@material-ui/core"
+import MainLayout from "../layouts/MainLayout";
 
-const App = () =>
+const Index = () =>
 {
     return (
         <>
-            <div className="center">
-                <h1>Welcome, Ashen One!</h1>
-                <h3>The song of the dark souls...</h3>
-            </div>
-
+            <MainLayout>
+                <div className="center">
+                    <h1>Welcome, Ashen One!</h1>
+                    <h3>The song of the dark souls...</h3>
+                </div>
+            </MainLayout>
+            
             <style jsx>
                 {`
                     .center
@@ -25,4 +27,4 @@ const App = () =>
     );
 }
 
-export default App;
+export default Index;
