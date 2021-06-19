@@ -33,9 +33,9 @@ const Create = () =>
             form_data.append('picture', picture);
             form_data.append('audio', audio);
 
-            axios.post(process.env.MAIN_URL + 'tracks', form_data)
+            axios.post('http://localhost:5000/tracks', form_data)
                 .then(res => router.push('/tracks'))
-                .catch(e => console.log(e))
+                .catch(e => console.log(e));
         }
     }
 

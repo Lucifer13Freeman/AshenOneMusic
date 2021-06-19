@@ -34,6 +34,9 @@ export class FileService
 
     remove_file(filename: string)
     {
+        const filepath = path.resolve(__dirname, '..', '..', 'static', filename);
 
+        if(!fs.existsSync(filepath)) return;
+        fs.unlinkSync(filepath);
     }
 }

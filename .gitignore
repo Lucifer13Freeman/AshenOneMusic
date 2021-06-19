@@ -6,6 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# server static files
+server/static/audio/
+server/static/image/
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -40,6 +44,15 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+server/node_modules/
+client/node_modules/
+
+# compiled output
+server/dist
+
+# next.js
+client/.next/
+client/out/
 
 # TypeScript v1 declaration files
 typings/

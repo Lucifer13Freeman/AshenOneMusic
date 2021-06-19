@@ -53,6 +53,10 @@ export class TrackService
     async delete(id: ObjectId): Promise<ObjectId> 
     {
         const track = await this.trackModel.findByIdAndDelete(id);
+
+        this.file_service.remove_file(track.audio);
+        this.file_service.remove_file(track.picture);
+
         return track._id;
     }
 

@@ -20,7 +20,7 @@ const TrackPage = ({ server_track }: any) =>
     {
         try 
         {
-            const response = await axios.post(process.env.MAIN_URL + 'tracks/comment',
+            const response = await axios.post('http://localhost:5000/tracks/comment',
             {
                 username: username.value,
                 text: text.value,
@@ -48,7 +48,7 @@ const TrackPage = ({ server_track }: any) =>
                 To list
             </Button>
             <Grid container style={{ margin: '20px 0' }}>
-                <img src={process.env.MAIN_URL + track.picture} width={200} height={200}/>
+                <img src={'http://localhost:5000/' + track.picture} width={200} height={200}/>
                 <div style={{ marginLeft: 30 }}>
                     <h1>Track: {track.name}</h1>
                     <h1>Artist: {track.artist}</h1>
@@ -89,7 +89,7 @@ export default TrackPage;
 
 export const getServerSideProps: GetServerSideProps = async ({ params }: any) => 
 {
-    const response = await axios.get(process.env.MAIN_URL + 'tracks/' + params.id)
+    const response = await axios.get('http://localhost:5000/tracks/' + params.id)
 
     return {
         props: {

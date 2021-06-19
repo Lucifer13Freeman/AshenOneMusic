@@ -1,5 +1,7 @@
 import { HYDRATE } from "next-redux-wrapper";
 import { AnyAction, CombinedState, combineReducers } from "redux";
+import { IPlayerState } from "../../types/player";
+import { ITrackState } from "../../types/track";
 import { player_reducer } from "./player_reducer";
 import { track_reducer } from "./track_reducer";
 
@@ -10,7 +12,7 @@ const root_reducer = combineReducers(
     track: track_reducer
 });
 
-export const reducer = (state: any, action: any) => 
+export const reducer = (state: any | undefined, action: AnyAction) => 
 {
     if (action.type === HYDRATE) 
     {
@@ -25,7 +27,7 @@ export const reducer = (state: any, action: any) =>
         return nextState
     } 
     else return root_reducer(state, action)
-  }
+}
 
 //export type RootState = ReturnType<typeof reducer>;
 

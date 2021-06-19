@@ -7,11 +7,13 @@ import { TrackModule } from './track/track.module';
 
 //const URI: string = process.env.MONGO_URI;
 
+const MONGO_URI = 'mongodb+srv://Lucifer:66DeusExAshenOneMusic66@ashenonemusic.x92w5.mongodb.net/AshenOneMusic?retryWrites=true&w=majority';
+
 @Module(
 {
     imports: [
         ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, '..', 'static') }),
-        MongooseModule.forRoot('mongodb+srv://Lucifer:66DeusExAshenOneMusic66@ashenonemusic.x92w5.mongodb.net/AshenOneMusic?retryWrites=true&w=majority'),
+        MongooseModule.forRoot(MONGO_URI),
         TrackModule,
         FileModule
     ]
