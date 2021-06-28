@@ -81,7 +81,11 @@ const Player: React.FC = () =>
                     : <Pause/>
                 }
             </IconButton>
-            <Grid container direction="column" style={{width:200, margin: '0 20px'}}>
+            <Grid 
+                container 
+                direction="column" 
+                style={{width:200, margin: '0 20px'}}
+            >
                 <div>{active?.name}</div>
                 <div 
                     style={{

@@ -5,15 +5,11 @@ import * as path from 'path';
 import { FileModule } from './file/file.module';
 import { TrackModule } from './track/track.module';
 
-//const URI: string = process.env.MONGO_URI;
-
-const MONGO_URI = 'mongodb+srv://Lucifer:66DeusExAshenOneMusic66@ashenonemusic.x92w5.mongodb.net/AshenOneMusic?retryWrites=true&w=majority';
-
 @Module(
 {
     imports: [
         ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, '..', 'static') }),
-        MongooseModule.forRoot(MONGO_URI),
+        MongooseModule.forRoot(process.env.MONGO_URI),
         TrackModule,
         FileModule
     ]

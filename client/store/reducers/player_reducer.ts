@@ -1,7 +1,7 @@
 import { IPlayerState, PlayerAction, PlayerActionTypes } from "../../types/player"
 
 
-const initialState: IPlayerState = {
+const initial_state: IPlayerState = {
     
     active: null,
     volume: 50,
@@ -10,7 +10,7 @@ const initialState: IPlayerState = {
     is_pause: true
 }
 
-export const player_reducer = (state = initialState, action: PlayerAction): IPlayerState =>
+export const player_reducer = (state = initial_state, action: PlayerAction): IPlayerState =>
 {
     switch (action.type) 
     {

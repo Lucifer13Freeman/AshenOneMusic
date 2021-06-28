@@ -66,7 +66,10 @@ const TrackItem: React.FC<TrackItemProps > = ({ track, active = false }) =>
     //console.log(process.env.MAIN_URL);
 
     return (
-        <Card className={styles.track} onClick={ () => router.push('tracks/' + track._id) }>
+        <Card 
+            className={styles.track} 
+            onClick={ () => router.push('tracks/' + track._id) }
+        >
             <IconButton>
                 { active
                     ? <Pause onClick={pause}/>

@@ -14,6 +14,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import styles from "../styles/Navbar.module.scss";
 
 
 const menu_items = [
@@ -36,7 +37,7 @@ export default function Navbar()
   return (
     <div>
       <CssBaseline/>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{backgroundColor: '#450000bb'}}>
         <Toolbar>
           <IconButton
             color="inherit"

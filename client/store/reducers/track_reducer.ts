@@ -1,12 +1,12 @@
 import { ITrackState, TrackAction, TrackActionTypes } from "../../types/track"
 
-const initialState: ITrackState =
+const initial_state: ITrackState =
 {
     tracks: [],
     error: ''
 }
 
-export const track_reducer = (state = initialState, action: TrackAction): ITrackState =>
+export const track_reducer = (state = initial_state, action: TrackAction): ITrackState =>
 {
     switch (action.type) 
     {
