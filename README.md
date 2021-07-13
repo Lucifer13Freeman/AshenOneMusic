@@ -1,5 +1,12 @@
 # AshenOne Music
 
+Backend: TypeScript, Node.js, Nest.js, MongoDB, mongoose (ORM для MongoDB)
+
+Frontend: TypeScript, Next.js, React, Material UI, SCSS, Redux, Thunk, axios
+
+
+#Instruction and steps:
+
 You need to create MongoDB claster and create .env file in server folder with MongoDB URI and other constants
 
 Comands for the terminal opened inside project's folder:
