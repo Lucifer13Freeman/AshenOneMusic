@@ -1,5 +1,7 @@
 # AshenOne Music
 
+A little fullstack music platform project
+
 Backend: TypeScript, Node.js, Nest.js, MongoDB, mongoose (ORM для MongoDB)
 
 Frontend: TypeScript, Next.js, React, Material UI, SCSS, Redux, Thunk, axios
